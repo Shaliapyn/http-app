@@ -13,7 +13,7 @@ const PatchExample = () => {
     })
   };
 
-  const { data, loading, error } = useFetch("https://jsonplaceholder.typicode.com/users/3", requestOptionsPatch);
+  const { data, loading, error } = useFetch("https://jsonplaceholder.typicode.com/users/5", requestOptionsPatch);
 
   console.log(data)
 
@@ -22,7 +22,7 @@ const PatchExample = () => {
   else {
     return (
       <div>
-        {data.name}
+
       </div>
     )
     
