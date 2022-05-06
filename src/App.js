@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import DeleteExample from "./components/DeleteExample";
+import GetExample from "./components/GetExample";
+import PatchExample from "./components/PatchExample";
+import PostExample from "./components/PostExample";
+import PutExample from "./components/PutExample";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+    return (
+      <div className="App">
+        <GetExample />
+        <PostExample />
+        <PutExample />
+        <DeleteExample />
+        <PatchExample />
+      </div>
+    );
+  }
+  
+
 
 export default App;
